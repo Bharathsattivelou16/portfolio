@@ -850,6 +850,7 @@
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#healthcare-projects">Healthcare</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact" class="nav-cta">Hire Me</a></li>
     </ul>
@@ -1138,6 +1139,65 @@
     </div>
   </section>
 
+<!-- HEALTHCARE PORTFOLIO -->
+  <section id="healthcare-projects" style="background:var(--bg2); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <p class="section-label">Self-Built · UK</p>
+      <h2 class="section-title">Healthcare data, end to end.</h2>
+      <p class="section-sub">A portfolio of healthcare and insurance analytics projects I built independently in the UK, each one a complete pipeline from raw data through SQL, Python, Power BI, and Snowflake, with all code on GitHub.</p>
+
+      <div class="projects-grid fade-in">
+
+        <div class="project-card" style="border-left:3px solid var(--teal);">
+          <div class="project-type">Healthcare · Predictive Analytics</div>
+          <h3>Hospital Patient Readmission Analysis</h3>
+          <p>Analysed 101,763 diabetic patient records to identify what drives 30-day hospital readmissions. Built a full pipeline of SQL cleaning and analytical queries, Python EDA and a logistic regression model, a 3-page Power BI dashboard, and a Snowflake warehouse with Time Travel. Found that prior inpatient visits are by far the strongest predictor of readmission.</p>
+          <div class="project-tags">
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">Snowflake</span>
+            <span class="project-tag">scikit-learn</span>
+          </div>
+          <a href="https://github.com/Bharathsattivelou16/healthcare-readmission-analysis" target="_blank" class="btn btn-outline" style="margin-top:0.6rem; text-align:center; font-size:0.82rem; padding:0.6rem 1.2rem;">View on GitHub →</a>
+        </div>
+
+        <div class="project-card" style="border-left:3px solid var(--teal);">
+          <div class="project-type">Insurance · Fraud Detection</div>
+          <h3>Healthcare Insurance Claims Analytics</h3>
+          <p>Built a star-schema data warehouse to analyse insurance claims, surface cost drivers, and flag anomalous claims using Z-score detection. Includes SQL schema design, Python anomaly detection and cost modelling, a Power BI claims dashboard, and a Snowflake warehouse demonstrating Time Travel, zero-copy clone, and materialised views.</p>
+          <div class="project-tags">
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">Snowflake</span>
+            <span class="project-tag">Star Schema</span>
+          </div>
+          <a href="https://github.com/Bharathsattivelou16/insurance-claims-analysis" target="_blank" class="btn btn-outline" style="margin-top:0.6rem; text-align:center; font-size:0.82rem; padding:0.6rem 1.2rem;">View on GitHub →</a>
+        </div>
+
+        <div class="project-card" style="border-left:3px solid var(--gold);">
+          <div class="project-type">NHS · Population Health</div>
+          <h3>NHS Population Health Dashboard</h3>
+          <p>My flagship project, using real NHS England open data — A&amp;E waiting times, bed occupancy, and GP appointments. Built a 3-layer Snowflake warehouse with streams, tasks, and stored procedures, ran statistical analysis and a 3-month bed-demand forecast in Python, and delivered a 4-page executive dashboard styled in NHS colours.</p>
+          <div class="project-tags">
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">Snowflake</span>
+            <span class="project-tag">Forecasting</span>
+          </div>
+          <a href="https://github.com/Bharathsattivelou16/nhs-population-health" target="_blank" class="btn btn-outline" style="margin-top:0.6rem; text-align:center; font-size:0.82rem; padding:0.6rem 1.2rem;">View on GitHub →</a>
+        </div>
+
+      </div>
+
+      <div style="margin-top:2.5rem; text-align:center;">
+        <a href="https://github.com/Bharathsattivelou16" target="_blank" class="btn btn-primary" style="font-size:0.9rem;">See all projects on GitHub →</a>
+      </div>
+    </div>
+  </section>
+  
   <!-- EDUCATION -->
   <section id="education">
     <div class="container">
@@ -1298,7 +1358,7 @@
 
     // Stagger timeline items
     document.querySelectorAll('.tl-item').forEach((el, i) => {
-      el.style.transitionDelay = $;{i * 0.1}s;
+      el.style.transitionDelay = `${i * 0.1}s`;
     });
   </script>
 
